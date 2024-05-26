@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qolam Vision Studio</title>
+     <link rel="icon" href="logo polos.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 50px; /* Sesuaikan ukuran logo */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+        }
+
+        .service h3 {
+            margin-top: 0;
+        }
+
+        .service img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            height: 5%;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Qolam Vision Studio</h1>
+        <p>Desain Grafis & Editing Video</p>
+    </header>
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#services">Layanan</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Selamat Datang di Qolam Vision Studio</h2>
+            <p>Kami menawarkan layanan desain grafis dan editing video profesional dan unik.</p>
+        </section>
+        <section id="services" class="services">
+            <div class="service">
+                <h3>Desain Grafis</h3>
+                <p>Kami menciptakan desain yang menakjubkan dan sesuai dengan kebutuhan Anda, seperti logo, undangan
+                    digital hingga video pembelajaran bahasa Arab interaktif.</p>
+                <img src="pamflet QVS.jpg" alt="Desain Grafis">
+            </div>
+            <div class="service">
+                <h3>Editing Video</h3>
+                <p>Editing video profesional untuk berbagai kebutuhan, termasuk promosi, 
+                   pernikahan, dan konten kreatif lainnya.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/J3ZNed7LMSw?start=34%22" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-container" style="margin-top: 20px;">
+                    <iframe src="https://www.youtube.com/embed/rKgjVwC1nH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Kontak Kami</h2>
+            <p> Instagram : Arabic_Editing.id</p>
+            <p> Email : logikasunyi@gmail.com</p>
+            <p>Hubungi kami untuk informasi lebih lanjut atau untuk memesan layanan kami.</p>
+            <button onclick="showContactForm()">Hubungi Kami</button>
+            <div id="contactForm" class="hidden">
+                <form>
+                    <label for="name">Nama:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Pesan:</label><br>
+                    <textarea id="message" name="message"></textarea><br>
+                    <input type="submit" value="Kirim">
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Qolam Vision Studio. Semua Hak cipta dilindungi Undang-undang.</p>
+    </footer>
+    <script>
+        function showContactForm() {
+            document.getElementById('contactForm').classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
